@@ -1,11 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>欢迎来到我的网站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rylinx 官方网站</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #1abc9c;
+    }
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #1abc9c, #16a085);
+      color: white;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+    .hero a.button {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: white;
+      color: #16a085;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .hero a.button:hover {
+      background-color: #1abc9c;
+      color: white;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #2c3e50;
+    }
+    .links a {
+      display: inline-block;
+      margin: 10px 20px;
+      padding: 10px 20px;
+      background-color: #16a085;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .links a:hover {
+      background-color: #1abc9c;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2c3e50;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, 我的网站上线啦！</h1>
-  <p>这是用 GitHub Pages 搭建的免费网页。</p>
+  <header>
+    <div class="logo"><strong>Rylinx</strong></div>
+    <nav>
+      <a href="#about">关于我们</a>
+      <a href="#products">产品展示</a>
+      <a href="#contact">联系我们</a>
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>欢迎来到 Rylinx</h1>
+    <p>创新科技，让生活更智能</p>
+    <a href="#about" class="button">了解更多</a>
+  </div>
+
+  <section id="about">
+    <h2>关于我们</h2>
+    <p style="text-align:center;">Rylinx 致力于为客户提供高质量的产品和服务。我们的团队拥有丰富的经验和无限创意。</p>
+  </section>
+
+  <section id="products">
+    <h2>产品展示</h2>
+    <div class="links" style="text-align:center;">
+      <a href="#">产品 A</a>
+      <a href="#">产品 B</a>
+      <a href="#">产品 C</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>联系我们</h2>
+    <p style="text-align:center;">邮箱：info@rylynx.com | 电话：123-456-7890</p>
+    <p style="text-align:center;">地址：某某城市，某某街道</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Rylinx 公司版权所有
+  </footer>
 </body>
 </html>
